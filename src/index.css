@@ -1,0 +1,150 @@
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ─── Section shared ─── */
+.section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.section-light {
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.section-dark .section-subtitle {
+  color: #aaa;
+}
+
+/* ─── Buttons ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary {
+  background: #d68c4d;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #c47a3a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(214, 140, 77, 0.35);
+}
+
+.btn-secondary {
+  background: #5a7d9a;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #4a6a85;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(90, 125, 154, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #d68c4d;
+  color: #d68c4d;
+}
+
+.btn-outline:hover {
+  background: #d68c4d;
+  color: #fff;
+}
+
+.btn-outline-light {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+/* ─── Utility ─── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 20px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
